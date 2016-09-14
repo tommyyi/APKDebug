@@ -1,0 +1,17 @@
+apktool2.2 is necessary
+
+生成调试文件
+java -jar apktool.jar d -d YOU.apk -o out
+
+生成apk
+java -jar apktool.jar b -d out -o YOU.apk
+
+启动apk
+adb shell am start -D -W -n com.youdian.tanksgofast/com.snowfish.cn.ganga.offline.helper.SFGameSplashActivity
+
+使用快捷键Ctrl+H打开“替换对话框”，在每行的开头添加内容。
+勾选左下角的“正则表达式”选项
+在“查找目标”里输入引号内字符串“^”，上尖号代表每行的开头
+在“替换为”里输入引号内字符串“a=0;// ”。
+然后点"全部替换"按钮，这样每行的前面就全部添加了a=0;//
+点击“替换”则可以逐行替换
