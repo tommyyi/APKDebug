@@ -7,6 +7,7 @@ public class Log
 {
     public static void print(String tag, String info)
     {
+
         android.util.Log.e(tag,info);
     }
 
