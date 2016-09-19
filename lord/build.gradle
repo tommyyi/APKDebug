@@ -5,6 +5,9 @@ sourceSets {
         java {
             srcDir 'D:\\360files\\1_Crack\\3_apktool2.2\\YOU\\smali'
         }
+        resources {
+            srcDir 'D:\\360files\\1_Crack\\3_apktool2.2\\YOU'
+        }
     }
 }
 
